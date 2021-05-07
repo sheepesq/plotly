@@ -1,4 +1,4 @@
-function init() {
+/* function init() {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selDataset");
 
@@ -96,5 +96,5 @@ function buildCharts(sample) {
 
     // 3. Use Plotly to plot the data with the layout.
     
-  });
-}
+  });ß
+} */

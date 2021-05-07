@@ -1,4 +1,4 @@
-function init() {
+/* function init() {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selDataset");
 
@@ -108,9 +108,24 @@ function buildCharts(sample) {
    
     
     // 4. Create the trace for the gauge chart.
-    var gaugeData = [
-     
-    ];
+    var gaugeData = [{
+      value: wfreqs,
+      type: "indicator",
+      mode: "gauge+number",
+      title: {text: "<b> Belly Button Washing Frequency </b> <br></br> Scrubs Per Week"},
+      gauge: {
+        axis: {range: [null,10], dtick: "2"},
+
+        bar: {color: "black"},
+        steps:[
+          {range: [0, 2], color: "red"},
+          {range: [2, 4], color: "orange"},
+          {range: [4, 6], color: "yellow"},
+          {range: [6, 8], color: "lightgreen"},
+          {range: [8, 10], color: "green"}
+        ],
+        dtick: 2
+      }
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
@@ -121,3 +136,4 @@ function buildCharts(sample) {
     
   });
 }
+ */
